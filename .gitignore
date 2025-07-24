@@ -6,13 +6,7 @@
 /productos-service/node_modules/
 /usuarios-service/.env
 /usuarios-service/node_modules/
-/frontend-app/README.md
-/frontend-app/node_modules/
-/frontend-app/.angular/
-/frontend-app/.vscode/
-/frontend-app/dist/
-/frontend-app/.env 
-/frontend-app/.gitignore
-/frontend-app/package-lock.json
-/frontend-app/package.json
-/frontend-app/.editorconfig
+/tienda-online-app/.env
+/tienda-online-app/node_modules/
+/tienda-online-app/.angular/
+/tienda-online-app/.vscode/
