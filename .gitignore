@@ -11,3 +11,8 @@
 /tienda-online-app/.angular/
 /tienda-online-app/.vscode/
 /tienda-online-app/.gitignore
+/tienda-online-app/README.md
+/tienda-online-app/angular.json/
+/tienda-online-app/package.json
+/tienda-online-app/package-lock.json
+/tienda-online-app/src/environments/environment
