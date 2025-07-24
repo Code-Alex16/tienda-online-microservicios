@@ -1,0 +1,111 @@
+/* src/app/components/order/order-history/order-history.component.css */
+.order-history-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.order-history-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #666;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+  margin-top: 30px;
+}
+
+.no-orders .go-to-products-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.no-orders .go-to-products-btn:hover {
+  background-color: #0056b3;
+}
+
+.orders-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden; /* Para que border-radius funcione en thead/tbody */
+}
+
+.orders-list th, .orders-list td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.orders-list th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.orders-list tr:last-child td {
+  border-bottom: none;
+}
+
+.orders-list tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.85em;
+  text-transform: capitalize;
+}
+
+.status-pendiente {
+  background-color: #ffeb3b; /* Amarillo */
+  color: #333;
+}
+
+.status-completado {
+  background-color: #8bc34a; /* Verde */
+  color: white;
+}
+
+.status-cancelado {
+  background-color: #f44336; /* Rojo */
+  color: white;
+}
+
+.view-details-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #0056b3;
+}

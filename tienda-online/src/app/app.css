@@ -1,0 +1,61 @@
+/* src/app/app.component.css */
+.navbar {
+  background-color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #555;
+}
+
+.user-info {
+  margin-left: 20px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.nav-links button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links button:hover {
+  background-color: #d32f2f;
+}
+
+.container {
+  padding: 20px;
+}

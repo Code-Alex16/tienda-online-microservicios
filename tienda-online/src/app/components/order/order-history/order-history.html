@@ -1,0 +1,33 @@
+<div class="order-history-container">
+  <h2>Mi Historial de Pedidos</h2>
+
+  <div *ngIf="orders.length === 0" class="no-orders">
+    <p>Aún no has realizado ningún pedido.</p>
+    <button routerLink="/products" class="go-to-products-btn">Comenzar a Comprar</button>
+  </div>
+
+  <div *ngIf="orders.length > 0" class="orders-list">
+    <table>
+      <thead>
+        <tr>
+          <th>ID Pedido</th>
+          <th>Fecha</th>
+          <th>Total</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>#{{ order.id_pedido }}</td>
+          <td>{{ order.fecha_pedido | date:'mediumDate' }}</td>
+          <td>${{ order.total | number:'1.2-2' }}</td>
+          <td><span class="status status-{{ order.estado | lowercase }}">{{ order.estado }}</span></td>
+          <td>
+            <button class="view-details-btn" (click)="viewOrderDetails(order.id_pedido)">Ver Detalles</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

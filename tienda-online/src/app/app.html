@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <a routerLink="/products" class="nav-brand">Mi Tienda Online</a>
+  <div class="nav-links">
+    <a routerLink="/products" routerLinkActive="active">Productos</a>
+
+    <ng-container *ngIf="!(authService.currentUser | async)">
+      <a routerLink="/login" routerLinkActive="active">Iniciar Sesión</a>
+      <a routerLink="/register" routerLinkActive="active">Registrarse</a>
+    </ng-container>
+
+    <ng-container *ngIf="authService.currentUser | async as user">
+      <a routerLink="/cart" routerLinkActive="active">Carrito</a>
+      <a routerLink="/orders" routerLinkActive="active">Mis Pedidos</a>
+      <span class="user-info">Bienvenido, {{ user.username }}</span>
+      <button (click)="logout()">Cerrar Sesión</button>
+    </ng-container>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

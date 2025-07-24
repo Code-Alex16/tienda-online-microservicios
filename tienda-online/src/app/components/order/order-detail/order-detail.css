@@ -1,0 +1,137 @@
+/* src/app/components/order/order-detail/order-detail.component.css */
+.order-detail-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order-detail-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.loading-message, .error-message {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #666;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+  margin-top: 30px;
+}
+
+.error-message {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.order-details-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.order-summary p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.order-summary p strong {
+  color: #333;
+}
+
+.order-summary .total {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.order-detail-container h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.order-items-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order-items-list th, .order-items-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.order-items-list th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.order-items-list tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.no-details {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-style: italic;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+.status-pendiente {
+  background-color: #ffeb3b; /* Amarillo */
+  color: #333;
+}
+
+.status-completado {
+  background-color: #8bc34a; /* Verde */
+  color: white;
+}
+
+.status-cancelado {
+  background-color: #f44336; /* Rojo */
+  color: white;
+}
+
+.go-back-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover {
+  background-color: #5a6268;
+}

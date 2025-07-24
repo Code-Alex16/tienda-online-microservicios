@@ -1,0 +1,81 @@
+.auth-form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.auth-form-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Incluye padding y border en el width */
+}
+
+.auth-form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-form-container button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  color: green;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.auth-form-container p {
+  margin-top: 20px;
+  color: #666;
+}
+
+.auth-form-container p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-form-container p a:hover {
+  text-decoration: underline;
+}

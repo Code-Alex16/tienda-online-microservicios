@@ -1,0 +1,35 @@
+<div class="cart-container">
+  <h2>Tu Carrito de Compras</h2>
+
+  <div *ngIf="cartItems.length === 0" class="empty-cart">
+    <p>Tu carrito está vacío. ¡Añade algunos productos!</p>
+    <button routerLink="/products" class="go-to-products-btn">Ver Productos</button>
+  </div>
+
+  <div *ngIf="cartItems.length > 0">
+    <div class="cart-items-list">
+      <div *ngFor="let item of cartItems" class="cart-item">
+        <img [src]="item.imagen_url" alt="{{ item.nombre_producto }}">
+        <div class="item-details">
+          <h3>{{ item.nombre_producto }}</h3>
+          <p>Precio Unitario: ${{ item.precio_unitario | number:'1.2-2' }}</p>
+          <p>Subtotal: ${{ item.subtotal | number:'1.2-2' }}</p>
+        </div>
+        <div class="item-quantity-controls">
+          <button (click)="updateQuantity(item.id_producto, item.cantidad - 1)" [disabled]="item.cantidad === 1">-</button>
+          <input type="number" [(ngModel)]="item.cantidad" (change)="onQuantityChange(item.id_producto, item.cantidad)" min="1">
+          <button (click)="updateQuantity(item.id_producto, item.cantidad + 1)">+</button>
+        </div>
+        <button class="remove-item-btn" (click)="removeItem(item.id_producto)">Eliminar</button>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <p class="cart-total">Total del Carrito: <span>${{ calculateTotal() | number:'1.2-2' }}</span></p>
+      <div class="cart-actions">
+        <button (click)="clearCart()" class="clear-cart-btn">Vaciar Carrito</button>
+        <button (click)="checkout()" class="checkout-btn">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+</div>

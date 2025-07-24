@@ -1,0 +1,37 @@
+<div class="product-list-container">
+  <h2>Nuestros Productos</h2>
+
+  <div *ngIf="products.length === 0" class="no-products">
+    <p>Cargando productos o no hay productos disponibles...</p>
+  </div>
+
+  <div class="product-grid" *ngIf="products.length > 0">
+    <div *ngFor="let product of products" class="product-card">
+      <img [src]="product.imagen_url" alt="{{ product.nombre }}">
+      <h3>{{ product.nombre }}</h3>
+      <p class="product-description">{{ product.descripcion }}</p>
+      <div class="product-meta">
+        <span class="product-price">${{ product.precio | number:'1.2-2' }}</span>
+        <span class="product-stock" [class.low-stock]="product.stock <= 5 && product.stock > 0">Stock: {{ product.stock }}</span>
+        <span class="product-out-of-stock" *ngIf="product.stock === 0">¡Agotado!</span>
+      </div>
+      <div class="product-actions">
+        <input
+          type="number"
+          min="1"
+          [max]="product.stock"
+          value="1"
+          #quantityInput
+          [disabled]="product.stock === 0"
+        >
+        <button
+          (click)="addToCart(product.id_producto, quantityInput.value)"
+          [disabled]="product.stock === 0 || !isAuthenticated"
+        >
+          Añadir al Carrito
+        </button>
+        <p *ngIf="!isAuthenticated" class="auth-required-message">Inicia sesión para añadir al carrito</p>
+      </div>
+    </div>
+  </div>
+</div>
