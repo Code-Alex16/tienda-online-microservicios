@@ -6,5 +6,5 @@
 /productos-service/node_modules/
 /usuarios-service/.env
 /usuarios-service/node_modules/
-/frontend-app/README.md
-/frontend-app/node_modules/
+APP/frontend-app/README.md
+APP/frontend-app/node_modules/
