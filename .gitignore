@@ -1,0 +1,10 @@
+/api-gateway/.env
+/api-gateway/node_modules/
+/carrito-service/.env
+/carrito-service/node_modules/
+/product-service/.env
+/product-service/node_modules/
+/usuarios-service/.env
+/usuarios-service/node_modules/
+/frontend-app/README.md
+/frontend-app/node_modules/
