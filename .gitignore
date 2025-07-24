@@ -8,5 +8,11 @@
 /usuarios-service/node_modules/
 /frontend-app/README.md
 /frontend-app/node_modules/
-frontend-app/.angular/
+/frontend-app/.angular/
 /frontend-app/.vscode/
+/frontend-app/dist/
+/frontend-app/.env 
+/frontend-app/.gitignore
+/frontend-app/package-lock.json
+/frontend-app/package.json
+/frontend-app/.editorconfig
