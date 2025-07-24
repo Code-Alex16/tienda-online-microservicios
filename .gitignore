@@ -15,4 +15,7 @@
 /tienda-online/angular.json/
 /tienda-online/package.json
 /tienda-online/package-lock.json
+/tienda-online/tsconfig.app.json/
+/tienda-online/tsconfig.json
+/tienda-online/tsconfig.spec.json
 /tienda-online/src/environments/environment
